@@ -15,8 +15,15 @@ class Window(Frame):
         self.master.config(menu=menu)
 
         users = Menu(menu, tearoff=0)
-        users.add_command(label="Log in")
+        users.add_command(label="Bank")
+        users.add_command(label="Inventory")
+        users.add_command(label="Profile")
         menu.add_cascade(label="Users", menu=users)
+
+        store = Menu(menu, tearoff=0)
+        store.add_command(label="Sell")
+        store.add_command(label="Purchase")
+        menu.add_cascade(label="Store", menu=store)
 
 
 root = Tk()
