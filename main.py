@@ -41,6 +41,7 @@ class Window(Frame):
     def callback(self):
         print("click!")
     
+class Window_2(Frame):
 root = Tk()
 
 
